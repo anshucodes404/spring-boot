@@ -1,0 +1,33 @@
+# Maven / Java build output
+**/target/
+**/build/
+
+# Maven wrapper jar (keep scripts and properties)
+!.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
+logs/
+
+# Runtime files
+*.pid
+*.seed
+*.pid.lock
+
+# Environment / local config
+.env
+.env.*
+
+# IDE / Editor
+.idea/
+*.iml
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
