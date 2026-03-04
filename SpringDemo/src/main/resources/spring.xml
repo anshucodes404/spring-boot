@@ -1,0 +1,26 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="alien" class="org.example.Alien" autowire="byType">
+<!--        <property name="age" value="20"/>  for setter injection-->
+<!--        <constructor-arg value="23" />-->
+<!--        this is constructor injection-->
+
+<!--        <property name="spaceship" ref="ship" />-->
+<!--        <constructor-arg ref="ship" />-->
+
+<!--        <property name="ship" ref="air-ship" />   implementing this by using autowire -->
+    </bean>
+
+    <bean id="space-ship" class="org.example.SpaceShip" primary="true" >
+<!--        primary is used to specify which bean should be autowired when there are multiple
+ candidates. In this case, if there are multiple beans of type SpaceShip, the one marked as primary will be chosen for autowiring.-->
+
+    </bean>
+
+    <bean id="air-ship" class="org.example.AirShip" >
+
+    </bean>
+</beans>
